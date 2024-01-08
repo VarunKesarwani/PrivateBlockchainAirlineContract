@@ -1,0 +1,3 @@
+geth --datadir ./node3/data --networkid 15353 --syncmode 'full' --ipcdisable --bootnodes $1 --port 30307 --http --http.corsdomain "*" --http.port 8547 --http.addr $2 --http.vhosts '*' --http.api admin,eth,miner,net,txpool,personal,web3,debug --authrpc.port 8553 --unlock $3 --allow-insecure-unlock  --password password.txt console
+
+#geth --datadir ./node3/data --networkid 15353 --syncmode 'full' --ipcdisable --bootnodes $1 --port 30307 --http --http.corsdomain "*" --http.port 8547 --http.addr $2 --http.vhosts '*' --http.api admin,eth,miner,net,txpool,personal,web3,debug --authrpc.port 8553 --unlock $3 --allow-insecure-unlock  --password password.txt console

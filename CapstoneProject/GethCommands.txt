@@ -1,0 +1,89 @@
+geth 
+--networkid 15353 
+--datadir ./node1/data 
+--bootnodes enode://2b9d1bb1a254ddb3cc2ae10ff5942f0c9379af8ddeef399d3416d8ad1a0a1761367f8606d8ddb68e63454acc80f857c237607d1bd39c1d47835ebad1cc99ae22@127.0.0.1:0?discport=30301 
+--port 30303 
+--ipcdisable 
+--syncmode 'full' 
+--http 
+--allow-insecure-unlock 
+--http.corsdomain “*” 
+--http.port 8545 
+--http.addr 172.31.23.214
+--http.vhosts '*'
+--http.api admin,eth,miner,net,txpool,personal,web3,debug
+--authrpc.addr localhost 
+--authrpc.port 8546 
+--authrpc.vhosts localhost 
+--authrpc.jwtsecret data/geth/jwtsecret 
+--unlock '0x41538cE5B0fBcF4C06828E1A786CeBD2136938fb' 
+--password password_1.txt 
+--mine console
+
+geth 
+--networkid 15353 
+--datadir ./node1/data 
+--bootnodes enode://2b9d1bb1a254ddb3cc2ae10ff5942f0c9379af8ddeef399d3416d8ad1a0a1761367f8606d8ddb68e63454acc80f857c237607d1bd39c1d47835ebad1cc99ae22@127.0.0.1:0?discport=30301
+--port 30303 
+--ipcdisable 
+--syncmode 'full' 
+--http 
+--allow-insecure-unlock 
+--http.corsdomain “*” 
+--http.port 8545 
+--http.addr 172.31.23.214 
+--authrpc.port 8546 
+--authrpc.jwtsecret node1/data/geth/jwtsecret 
+--unlock '0x7B3413D90564F5E9A9Fe4206Cc2383c2eAB386c3' 
+--password password_1.txt 
+--mine console
+
+geth 
+--datadir ./node1/data 
+--networkid 15353 
+--syncmode 'full' 
+--bootnodes enode://c72726aa6ac60b1e90cbb6b16beea27f19f7cd9af98c7eac4a29dd59f87e6a38a9d141b1921a52863b5d5e3372411f5d5631496fa276b58eceed5118c4de5520@127.0.0.1:0?discport=30301 
+--port 30303 
+--http 
+--http.corsdomain “*” 
+--http.port 8545 
+--http.addr 172.31.23.214 
+--http.vhosts '*' 
+--authrpc.port 8551 
+--http.api admin,eth,miner,net,txpool,personal,web3 
+--unlock '0x7B3413D90564F5E9A9Fe4206Cc2383c2eAB386c3' 
+--allow-insecure-unlock 
+--password password_1.txt 
+--mine console 
+
+geth 
+--networkid 15353 
+--datadir ./node2/data 
+--bootnodes enode://2b9d1bb1a254ddb3cc2ae10ff5942f0c9379af8ddeef399d3416d8ad1a0a1761367f8606d8ddb68e63454acc80f857c237607d1bd39c1d47835ebad1cc99ae22@18.212.75.108:0?discport=30301
+--port 30305 
+--ipcdisable 
+--syncmode 'full' 
+--http 
+--allow-insecure-unlock 
+--http.corsdomain “*” 
+--http.port 8546 
+--authrpc.port 8553 
+--authrpc.jwtsecret data/geth/jwtsecret 
+--unlock '0x8ccbCfDc030fa09Fb6Fdc20924B3cec35b08d8AC' 
+--password password.txt console
+
+geth 
+--networkid 15353 
+--datadir ./node3/data 
+--bootnodes enode://2b9d1bb1a254ddb3cc2ae10ff5942f0c9379af8ddeef399d3416d8ad1a0a1761367f8606d8ddb68e63454acc80f857c237607d1bd39c1d47835ebad1cc99ae22@18.212.75.108:0?discport=30301
+--port 30305 
+--ipcdisable 
+--syncmode 'full' 
+--http 
+--allow-insecure-unlock 
+--http.corsdomain “*” 
+--http.port 8546 
+--authrpc.port 8553 
+--authrpc.jwtsecret data/geth/jwtsecret 
+--unlock '0x8ccbCfDc030fa09Fb6Fdc20924B3cec35b08d8AC' 
+--password password.txt console
